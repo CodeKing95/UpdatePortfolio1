@@ -1,14 +1,27 @@
 import { Link } from "react-scroll";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
+
     <footer className="footer--container">
-      <div className="footer--link--container">
-        <div>
+
+      <div className="footer--link--container" data-aos="fade-up">
+        <div data-aos="fade-right">
           <img src="./img/logo.svg" alt="Logoipsum" />
         </div>
-        <div className="footer--items">
+
+        <div className="footer--items" data-aos="fade-up" data-aos-delay="200" >
           <ul>
             <li>
               <Link
@@ -77,7 +90,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer--social--icon">
+        <div className="footer--social--icon" data-aos="zoom-in" data-aos-delay="300">
           <ul>
             <li>
               <a
@@ -170,10 +183,10 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <hr className="divider" />
-      <div className="footer--content--container">
+      <hr className="divider" data-aos="fade-in"/>
+      <div className="footer--content--container" data-aos="fade-up">
         <p className="footer--content">Made with 💖 by John</p>
-        <div className="footer--social--icon">
+        <div className="footer--social--icon" data-aos="fade-left" data-aos-delay="200">
           <ul>
             <li>
               <Link

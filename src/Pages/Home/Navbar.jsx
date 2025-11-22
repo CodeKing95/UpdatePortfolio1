@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -13,12 +15,20 @@ function Navbar() {
   };
 
   useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
         closeMenu();
       }
     };
-
+   
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -33,19 +43,24 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <img src="./img/logo1.png" alt="Logoipsum" witdh="100" height="100"/>
+    <nav className={`navbar ${navActive ? "active" : ""}`} data-aos="fade-down">
+      <div data-aos="fade-right">
+        <img src="./img/logo1.png" alt="Logoipsum" witdh="50" height="50"/>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
+        data-aos="fade-left"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
       </a>
-      <div className={`navbar--items ${navActive ? "active" : ""}`}>
+
+      <div className={`navbar--items ${navActive ? "active" : ""}`}
+      data-aos="fade-down"
+      >
+
         <ul>
           <li>
             <Link
@@ -86,7 +101,7 @@ function Navbar() {
               to="MyPortfolio"
               className="navbar--content"
             >
-              Portfolio
+              Projects
             </Link>
           </li>
           <li>

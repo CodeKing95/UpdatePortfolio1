@@ -1,20 +1,39 @@
+import React, { use, useEffect } from "react";
 import data from "../../data/index.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Testimonial() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+
   return (
     <section className="testimonial--section" id="testimonial">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Clients Feedback</p>
-          <h2 className="sections--heading">Customer Feedback</h2>
+          <p className="sub--title" data-aos="fade-down">Clients Feedback</p>
+          <h2 className="sections--heading" data-aos="fade-up">Customer Feedback</h2>
         </div>
       </div>
+
       <div className="portfolio--section--container">
         {data?.testimonial?.map((item, index) => (
-          <div key={index} className="testimonial--section--card">
+          <div key={index} 
+          className="testimonial--section--card"
+          data-aos="fade-up"
+          data-aos-delay={index * 200}
+          >
+
             <div className="testimonial--section--card--review">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
+                
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
                   height="26"
@@ -27,6 +46,7 @@ export default function Testimonial() {
                   />
                 </svg>
               ))}
+
             </div>
             <p className="text-md">{item.description}</p>
             <div className="testimonial--section--card--author--detail">

@@ -18,11 +18,10 @@ p {
 }
 :root {
   --primary: #5e3bee;
-  --heading-color: #282938;
+  --heading-color: #0909d9ff;
   --bg-shade: #f5fcff;
-  --github: #e62872;
   --darkblue: #1c1e53;
-  --black: #000000;
+  --black: #000000ff;
   --white: #ffffff;
 }
 .btn {
@@ -69,11 +68,9 @@ p {
   color: var(--white);
   background-color: var(--github);
   border: var(--github);
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
 }
 .btn-github:hover {
@@ -151,6 +148,9 @@ h2 {
 
 /* Navbar Style Start */
 .navbar {
+  position: fixed;
+  width: 90%;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -318,7 +318,30 @@ h2 {
 .about--section--img > img {
   width: 65%;
   height: 65%;
+  width: 250px;
+  border-radius: 15px;
+  padding: 8px;
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8b00ff
+  );
+  animation: neonRGB 4s linear infinite;
+  background-size: 400%;
 }
+
+@keyframes neonRGB {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
+
 /* About Us Ends */
 
 /* My Portfolio Starts */
