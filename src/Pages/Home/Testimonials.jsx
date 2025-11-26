@@ -17,7 +17,8 @@ export default function Testimonial() {
     <section className="testimonial--section" id="testimonial">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <h2 className="sections--heading" data-aos="fade-up">Education</h2>
+          <h2 className="sections--heading" data-aos="fade-up">Education & Diploma</h2>
+          
         </div>
       </div>
 
@@ -30,18 +31,17 @@ export default function Testimonial() {
           >
             
 
-          <h2 className="sections--heading" data-aos="fade-up">Education</h2>
-            <p className="text-md">{item.description}</p>
-            <div className="testimonial--section--card--author--detail">
-              <div>
-                <p className="text-md testimonial--author--name">
-                  {item.author_name}
-                </p>
-                <p className="text-md testimonial--author--designation">
-                  {item.author_designation}
-                </p>
-              </div>
-            </div>
+       <h2 className="sections--heading" data-aos="fade-up">
+  {item.heading}
+</h2>
+<p className="text-md">{item.description}</p>
+<div className="testimonial--section--card--author--detail">
+  <div>
+    <p className="text-md testimonial--author--name">{item.author_name}</p>
+    <p className="text-md testimonial--author--designation">{item.author_designation}</p>
+  </div>
+</div>
+
           </div>
         ))}
       </div>

@@ -104,6 +104,23 @@ function Navbar() {
               Projects
             </Link>
           </li>
+
+               <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="mySkills"
+              className="navbar--content"
+            >
+              Skills
+            </Link>
+          </li>
+
+
           <li>
             <Link
               onClick={closeMenu}
@@ -115,7 +132,7 @@ function Navbar() {
               to="testimonial"
               className="navbar--content"
             >
-              Experience
+              Qualifications
             </Link>
           </li>
         </ul>

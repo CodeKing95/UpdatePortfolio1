@@ -1,7 +1,10 @@
 import data from "../../data/index.json";
 
+
 export default function MyPortfolio() {
     return (
+       
+
         <section
             className="portfolio--section"
             id="MyPortfolio"
@@ -66,7 +69,8 @@ export default function MyPortfolio() {
                         >
                             <div>
                                 <h3 className="portfolio--section--title">{item.title}</h3>
-                                <p className="text-md">{item.description}</p>
+                                <p className="text-md" dangerouslySetInnerHTML={{ __html: item.description }}></p>
+
                             </div>
 
                             <a
@@ -96,6 +100,7 @@ export default function MyPortfolio() {
                     </div>
                 ))}
             </div>
+            
         </section>
     );
 }

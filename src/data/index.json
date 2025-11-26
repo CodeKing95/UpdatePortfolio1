@@ -29,16 +29,16 @@
     {
       "id": "1",
       "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique. Tech: HTML CSS JAVASCRIPT",
+      "title": "E-Commerce",
+      "description": "This is an e-commerce website project that I have developed for the final product of my coding bootcamp.<br/><br/><strong>Tech Used:</strong> HTML, CSS, JavaScript, SCSS, React JS, Vite, Responsive Design",
       "link": "https://codeking95.github.io/Witze-Joke/",
       "github": "https://github.com/CodeKing95"
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Airline Managements System",
+      "description": "This is a morden airline management booking system. Since I love travelling via plane, this is the reason why i decided to make this project too.<br/><br/><strong>Tech Used:</strong> HTML, CSS, JavaScript, PHP, MySQL",
       "link": "https://codeking95.github.io/flug/",
       "github": "https://www.youtube.com/shorts/XYgibLTqxs8"
 
@@ -46,29 +46,53 @@
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Joker App",
+      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
+      "link": "https://comfy-sorbet-7bb1c8.netlify.app/"
+    },
+     {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Joker App",
+      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
+      "link": "https://comfy-sorbet-7bb1c8.netlify.app/"
+    },
+      {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Joker App",
+      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
+      "link": "https://comfy-sorbet-7bb1c8.netlify.app/"
+    },
+      {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Joker App",
+      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes. <br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
       "link": "https://comfy-sorbet-7bb1c8.netlify.app/"
     }
   ],
   "testimonial": [
-    {
-      "id": "1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
-    },
-    {
-      "id": "2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
-    },
-    {
-      "id": "3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
+  {
+  "id": 1,
+  "heading": "Ernest Bevin College",
+  "description": "BTEC LEVEL 3 Information Technology ",
+  "author_name": "Final Grade",
+  "author_designation": "Double Distinction**"
+},
+{
+  "id": 2,
+  "heading": "Middlesex University",
+  "description": "Bachelor of Science Information Technology",
+  "author_name": "Final Grade",
+  "author_designation": "Upper Second Class Honors (2.1)"
+},
+{
+   "id": 3,
+   "heading": "DevKarriere",
+    "description": "Coding BootCamp",
+    "author_name": "Portfolio Projects",
+     "author_designation": "Web Development"
     }
   ]
   
