@@ -157,45 +157,154 @@ h2 {
 /* Section Titles Ends */
 
 /* Navbar Style Start */
+/* ===============================
+   NAVBAR – CLEAN & MODERN
+================================ */
 
 .navbar {
   position: fixed;
-  width: 90%;
-  z-index: 9999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 85.333px;
-  background: var(--white);
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  
-}
-.navbar--items > ul {
-  list-style: none;
+  width: 100%;
+  height: 70px;
+  z-index: 9999;
   display: flex;
-  align-items: flex-start;
-  gap: 42.667px;
-  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1.5rem; /* FIXED */
+  background: var(--white);
+
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease, box-shadow 0.3s ease;
 }
-.navbar--items ul > li > a {
-  text-decoration: none;
+
+/* NAV ITEMS */
+.navbar--items ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* Navbar Content */
+
+/* LINKS */
 .navbar--content {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+  color: #334155;
+  transition: color 0.25s ease;
+}
+
+.navbar--content:hover {
+  color: #0d6efd;
+}
+
+/* Active link underline */
+.navbar--active-content {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.navbar--active-content::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #0d6efd;
+  border-radius: 999px;
+}
+
+/* ===============================
+   HAMBURGER
+================================ */
+
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
 }
-.navbar--active-content {
-  color: var(--primary);
+
+.nav__hamburger__line {
+  width: 26px;
+  height: 3px;
+  background: #0f172a;
+  border-radius: 999px;
+  transition: all 0.3s ease;
 }
+
+/* ===============================
+   MOBILE MENU
+================================ */
+
+@media (max-width: 992px) {
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .navbar--items {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    animation: slideDown 0.3s ease;
+  }
+
+  .navbar--items.active {
+    display: flex;
+  }
+
+  .navbar--items ul {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .navbar--content {
+    font-size: 1.05rem;
+  }
+
+  /* Hide CTA on mobile */
+  .btn {
+    display: none;
+  }
+}
+
+/* Small mobile spacing */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Navbar Styler Ends */
 
 /* Hero Section Style */

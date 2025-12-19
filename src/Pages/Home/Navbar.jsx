@@ -19,7 +19,9 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) closeMenu();
+      if (window.innerWidth > 768) {
+          setNavActive(false);
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -132,7 +134,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-
+        
       <Link
         onClick={closeMenu}
         activeClass="navbar--active-content"
@@ -145,6 +147,7 @@ function Navbar() {
       >
         Contact Me
       </Link>
+      
     </nav>
   );
 }

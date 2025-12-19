@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             {/* Resume Button */}
             <div data-aos="fade-up" data-aos-delay="200">
-              <a href="">
+              <a href="https://pdflink.to/dbe63b44/">
                 <button className="btn btn-github">
                   <img
                     src="./img/resume.png"

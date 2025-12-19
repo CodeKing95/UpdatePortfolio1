@@ -30,45 +30,49 @@
       "id": "1",
       "src": "./img/ecom.jpg",
       "title": "E-Commerce",
-      "description": "This is an e-commerce website project that I have developed for the final product of my coding bootcamp.<br/><br/><strong>Tech Used:</strong> HTML, CSS, JavaScript, SCSS, React JS, Vite, Responsive Design",
-      "link": "",
-      "github": ""
+      "description": "This is an e-commerce website project that I have developed for the final product of my coding bootcamp.<br/><br/><strong>Tech Used:</strong> JavaScript, REACT JS & TypeScript.",
+      "link": "https://ecommercetechstack.netlify.app/",
+      "github": "https://github.com/CodeKing95/EcommerceUpdate"
     },
     {
       "id": "2",
       "src": "./img/air.png",
       "title": "Airline Managements System",
       "description": "This is a morden airline management booking system. Since I love travelling via plane, this is the reason why i decided to make this project too.<br/><br/><strong>Tech Used:</strong> HTML, CSS, JavaScript, PHP, MySQL, Bootstrap",
-      "link": "",
-      "github": ""
+      "link": "https://codeking95.github.io/AirlineSystem.PHP/Index.html",
+      "github": "https://github.com/CodeKing95/AirlineSystem.PHP"
     },
     {
       "id": "3",
       "src": "./img/ha.jpg",
-      "title": "Joker App",
-      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
-      "link": ""
+      "title": "Joke App",
+      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, REST API",
+      "link": "https://codeking95.github.io/Witze-Joke/",
+      "github": "https://github.com/CodeKing95/Witze-Joke"
     },
     {
-      "id": "3",
+      "id": "4",
       "src": "./img/movies.jpg",
       "title": "Movie App",
-      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
-      "link": ""
+      "description": "This is a movie search engine app, It is were I can use to search for a movie and it was done with  a public API to dynamically load and display the movies.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, REST API",
+      "link": "https://codeking95.github.io/Movie/",
+      "github": "https://github.com/CodeKing95/Movie"
     },
     {
-      "id": "3",
+      "id": "5",
       "src": "./img/weather.jpg",
       "title": "Weather App",
-      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
-      "link": ""
+      "description": "As a weather app to showcase the current condition of the day, public API to dynamically load and display current weathers.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, REST API",
+      "link": "https://codeking95.github.io/Wetter-Weather/",
+      "github": "https://github.com/CodeKing95/Wetter-Weather"
     },
     {
-      "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Joker App",
-      "description": "As a child, I loved joke books - now I've developed my own joke app! I used a public API to dynamically load and display the jokes. <br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
-      "link": ""
+      "id": "6",
+      "src": "./img/note.jpg",
+      "title": "Note App",
+      "description": "It is a Note app for the user to make important notes on the app.<br/><br/><strong>Tech Used:</strong> JavaScript, SCSS, BEM, AJAX, VITE",
+      "link": "https://codeking95.github.io/Modul5/Index.html",
+      "github": "https://github.com/CodeKing95/Modul5"
     }
   ],
   "testimonial": [
