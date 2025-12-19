@@ -50,6 +50,7 @@ Each project includes:
 - Add a blog.
 - More projects.
 - Animations.
+- Switch to a different language.
   
 
   
